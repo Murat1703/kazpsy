@@ -1,0 +1,45 @@
+@media (max-width: 768px){
+    .main-content{
+        display: block;
+    }
+    .main-nav{
+        display: none;
+    }
+    .main-content-text{
+        width: auto;
+    }
+    .main-img{
+        width: 100%;
+    }
+    .coaches-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news-list{
+        grid-template-columns: auto;
+    }
+    .advantages-list{
+        flex-wrap: wrap;
+    }
+    .footer-content{
+        display: block;
+    }
+    .footer-item-desc{
+        max-width: 100%;
+    }
+    .footer-item{
+        margin: 20px 0;
+    }
+}
+@media (max-width: 420px){
+    .main-title, .main-title span{
+        font-size: 40px;
+        line-height: 45px;;
+    }
+}
+@media (max-width: 360px){
+    .main-title, .main-title span{
+        font-size: 30px;
+        line-height: 40px;;
+    }
+}
