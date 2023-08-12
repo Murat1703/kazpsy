@@ -11,12 +11,18 @@
     .main-img{
         width: 100%;
     }
+    .adv-list{
+        grid-template-columns: repeat(2, auto);
+    }
     .coaches-list{
         flex-wrap: wrap;
         justify-content: center;
     }
     .news-list{
         grid-template-columns: auto;
+    }
+    .news-thumbnail{
+        max-width: 100%;
     }
     .advantages-list{
         flex-wrap: wrap;
@@ -30,11 +36,40 @@
     .footer-item{
         margin: 20px 0;
     }
+    .footer-copyright-left{
+        display: none;
+    }
+    .footer-copyright-right{
+        display: block;
+    }    
+    .burger-menu{
+        display: block;
+    }
+    .burger-menu.show span:nth-child(1){
+        transform: rotate(45deg);
+        top: 20px;
+        transition: .3s ease all;
+    }
+    .burger-menu.show span:nth-child(2){
+        display: none;
+    }
+    .burger-menu.show span:nth-child(3){
+        transform: rotate(-45deg);
+        top: 20px;
+        transition: .3s ease all;
+    }
 }
 @media (max-width: 420px){
     .main-title, .main-title span{
         font-size: 40px;
         line-height: 45px;;
+    }
+    .adv-list{
+        grid-template-columns: auto;
+        margin: 0 auto;
+    }
+    .adv-item{
+        max-width: 100%;
     }
 }
 @media (max-width: 360px){
